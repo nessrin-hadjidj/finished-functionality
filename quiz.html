@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="/quizstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-sec">
+         <div>
+             <p id="qn-number">1</p>
+         </div>
+         <div id="timer"></div>  
+         <p id="qn"></p> 
+        </div>
+        <div class="middle-sec">
+            
+        <div id="quizContainer">
+        </div>
+        <div class="bottom-sec">
+            <button id="next-btn" onclick="nextQuestion()"> Next </button>
+            <button id="finish-btn" onclick ="displayResults()">Finish</button> 
+        </div>
+        <div id="quiz-container-results">
+            <div class="header">
+                <h1>Results</h1> 
+             <p id="results-para">Well done on completing the quiz!!!</p>  
+              </div>
+              <div class="results">
+                  <p id="qns-right"></p>
+                  <p id="qns-wrong"></p>
+              </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
